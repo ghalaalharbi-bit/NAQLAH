@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Activity Leaders &amp; Instructors - Naqlah Chess Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="manager_js.js"></script>
+</head>
+
+<body onload="displayTeam()">
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Naqlah Chess Club logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Club Offerings</a></li>
+                <li><a href="member_dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager_dashboard.html">Manager Dashboard</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; <a href="manager_dashboard.html">Manager Dashboard</a> &gt; Manage Activity Leaders &amp; Instructors
+        </div>
+            <h1 class="page-title">Manage Activity Leaders &amp; Instructors</h1>
+    </div>
+    
+<main> 
+  <p class="manager-intro">Manage Naqlah chess club team</p>
+    <section class="manager-team-section">
+         <h2 class="manager-section-label">Current Team</h2>
+
+         <form id="deleteTeamForm" action="#" method="post" onsubmit="return deleteMembers();">
+             <div class="manager-team-list" id="teamList"></div>
+                
+             <div class="manager-delete-row"><button type="submit" class="manager-delete-btn">Delete</button></div>
+         </form>
+    </section>
+
+    <hr class="manager-divider">
+
+            <div class="form-container">
+
+            <form id="addTeamForm" action="#" method="post" novalidate onsubmit="return addTeamMember();">
+                <fieldset>
+                    <legend>Add New Team Member</legend>
+
+                    <div class="form-row">
+
+                        <div class="form-col">
+
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="birth">Date of Birth:</label>
+                            <input type="date" id="birth" name="birth" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="photo">Personal Photo:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                        </div>
+
+                        <div class="form-col">
+
+                            <label for="expertise">Area of Expertise:</label>
+                            <input type="text" id="expertise" name="expertise" required>
+
+                            <label for="skills">Skills:</label>
+                            <input type="text" id="skills" name="skills" required>
+
+                             <label for="education">Education:</label>
+                            <input type="text" id="education" name="education" required>
+
+                            <input type="submit" value="Add" class="submit-btn">
+
+                         </div>
+
+                     </div>
+
+              </fieldset>
+
+    </form>
+
+</div>
+</main>
+
+<footer>
+     <div class="footer-col">
+            <h2>CONTACT US</h2>
+            <ul class="contact-list">
+                <li>Email: info@naqlah.club</li>
+                <li>Phone: +966 50 000 0000</li>
+                <li>Location: Riyadh, KSA</li>
+            </ul>
+        </div>
+        <div class="footer-col footer-logo">
+            <div><img src="images/logo.png" alt="Naqlah Chess Club logo" ></div>
+        </div>
+        <div class="footer-col footer-right">
+            <h2>OUR ACCOUNTS</h2>
+         <ul class="social-list">
+              <li>Snapchat: @naqlah.club</li>
+                <li>Instagram: @naqlah.club</li>
+                <li>TikTok: @naqlah.club</li>
+           </ul>
+     </div>
+</footer>
+
+      <div class="copyright">
+        Copyright &copy; 2026 Naqlah
+      </div>
+    <script src="theme.js"></script>
+
+</body>
+</html>

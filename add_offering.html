@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a New Offering - Naqlah Chess Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="manager_js.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Naqlah Chess Club logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Club Offerings</a></li>
+                <li><a href="member_dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager_dashboard.html">Manager Dashboard</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> &gt;<a href="manager_dashboard.html">Manager Dashboard</a> &gt; Add a New Offering
+        </div>
+            <h1 class="page-title">Add a New Offering</h1>
+    </div>
+
+<main> 
+        <p class="manager-intro">Create a new chess club experience</p>
+        <form class="manager-add-form" id="addOfferingForm" action="#" method="post" novalidate onsubmit="return addOffering();">
+          <label for="offering-name">Offering Name</label>
+             <input type="text" id="offering-name" name="offering_name" required>
+
+          <label for="offering-image">Image</label>
+             <input type="file" id="offering-image" name="offering_image" accept="image/*" required>
+         
+          <label for="offering-price">Price / Registration Fee</label>
+            <input type="number" id="offering-price" name="offering_price" min="0" placeholder="SAR" required>
+          
+          <label for="offering-description">Description</label>
+            <textarea id="offering-description" name="offering_description" required></textarea>
+            
+          <input type="submit" value="Submit" class="submit-btn">
+        </form>
+</main>
+
+
+<footer>
+     <div class="footer-col">
+         <h2>CONTACT US</h2>
+            <ul class="contact-list">
+                <li>Email: info@naqlah.club</li>
+                <li>Phone: +966 50 000 0000</li>
+                <li>Location: Riyadh, KSA</li>
+            </ul>
+        </div>
+        <div class="footer-col footer-logo">
+            <div><img src="images/logo.png" alt="Naqlah Chess Club logo" ></div>
+        </div>
+        <div class="footer-col footer-right">
+            <h2>OUR ACCOUNTS</h2>
+         <ul class="social-list">
+              <li>Snapchat: @naqlah.club</li>
+                <li>Instagram: @naqlah.club</li>
+                <li>TikTok: @naqlah.club</li>
+           </ul>
+     </div>
+</footer>
+
+      <div class="copyright">
+        Copyright &copy; 2026 Naqlah
+      </div>
+    <script src="theme.js"></script>
+
+</body>
+</html>

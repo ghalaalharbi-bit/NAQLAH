@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Evaluate Offering - Naqlah Chess Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="member-pages">
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Naqlah Chess Club logo">
+        </div>
+        <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Club Offerings</a></li>
+                <li><a href="member_dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager_dashboard.html">Manager Dashboard</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; <a href="member_dashboard.html">Member Dashboard</a> &gt; Evaluate Offering
+        </div>
+        <h1 class="page-title">Offering Evaluation</h1>
+    </div>
+
+    <main>
+        <div class="form-container">
+            <form action="#" method="POST" onsubmit="return evaluateOffering();">
+                
+                <label for="evalOfferingSelect">Select a Completed Offering:</label>
+                <div class="select-box-container">
+                    <select id="evalOfferingSelect" name="offering" required title="Please select a completed offering.">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Chess Basics Workshop">Chess Basics Workshop</option>
+                        <option value="Chess Social Meetup">Chess Social Meetup</option>
+                        <option value="Game Analysis Session">Game Analysis Session</option>
+                    </select>
+                </div>
+
+                <p class="rating-title">Rating:</p>
+
+              <div class="rating-container">
+
+    <input type="radio" id="rate1" name="rating" value="1" required title="Please select a rating.">
+    <label class="rating-divider" for="rate1">1</label>
+
+    <input type="radio" id="rate2" name="rating" value="2">
+    <label class="rating-divider" for="rate2">2</label>
+
+    <input type="radio" id="rate3" name="rating" value="3">
+    <label class="rating-divider" for="rate3">3</label>
+
+    <input type="radio" id="rate4" name="rating" value="4">
+    <label class="rating-divider" for="rate4">4</label>
+
+    <input type="radio" id="rate5" name="rating" value="5">
+    <label for="rate5">5</label>
+
+            </div>
+
+                <label for="feedbackText">Feedback:</label>
+                <textarea id="feedbackText" name="feedback" rows="5" required title="Please enter your feedback."></textarea>
+
+                <div class="submit-btn-container">
+                    <input type="submit" value="Submit" class="submit-btn">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <h2>CONTACT US</h2>
+            <ul class="contact-list">
+                <li>Email: info@naqlah.club</li>
+                <li>Phone: +966 50 000 0000</li>
+                <li>Location: Riyadh, KSA</li>
+            </ul>
+        </div>
+        <div class="footer-col footer-logo">
+            <div><img src="images/logo.png" alt="Naqlah Chess Club logo" ></div>
+        </div>
+        <div class="footer-col footer-right">
+            <h2>OUR ACCOUNTS</h2>
+            <ul class="social-list">
+                <li>Snapchat: @naqlah.club</li>
+                <li>Instagram: @naqlah.club</li>
+                <li>TikTok: @naqlah.club</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright &copy; 2026 Naqlah
+    </div>
+    <script src="Member_js.js"></script>
+        <script src="theme.js"></script>
+
+</body>
+</html>
